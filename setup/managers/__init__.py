@@ -1,0 +1,4 @@
+from setup.managers.setup_manager import SetupManager
+from setup.managers.windows_setup_manager import WindowsSetupManager
+from setup.managers.linux_setup_manager import LinuxSetupManager
+from setup.managers.mac_os_setup_manager import MacOsSetupManager

@@ -1,8 +1,6 @@
 import platform
 
-from setup.windows import WindowsSetupManager
-from setup.unix.linux import LinuxSetupManager
-from setup.unix.mac_os import MacOsSetupManager
+from setup.managers import WindowsSetupManager, LinuxSetupManager, MacOsSetupManager
 
 if __name__ == "__main__":
     system = platform.system()
@@ -16,6 +14,5 @@ if __name__ == "__main__":
             LinuxSetupManager(system=system).dev_setup()
         elif system == 'Darwin':
             MacOsSetupManager(system=system).dev_setup()
-    else: 
+    else:
         print("Unsupported System:" + system)
-        
