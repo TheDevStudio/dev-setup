@@ -11,4 +11,6 @@ class WindowsSetupManager(SetupManager):
         SetupChocolatey().perform()
         SetupVSCode().perform()
         SetupGit().perform()
+        SetupAndroidStudio().perform()
+        SetupFlutter().perform()
         InitWorkspace().perform()
